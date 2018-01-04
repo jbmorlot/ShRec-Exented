@@ -4,13 +4,14 @@ parameter [1].
 ## ShRec3D
 Algorithm developped by Lesnes et al [2] which reconstruct the 3D coordinates of a chromosom from a normalized HiC map (SCN [3]).
 The Algorithm is basically in two parts:
- * Conversion from normalized HiC contact matrix C_{ij} in distance matrix D_{ij} such that C_{ij} = 1/D_{ij} 
+ * Conversion from normalized HiC contact matrix $C_{ij}$ in distance matrix $D_{ij}$ such that $C_{ij} = 1/D_{ij} $
  * Conversion of the distance mtrix in 3D coordinates with MDS
 
 ## Improvements
 ### Tuning the imputation parameter
-Conversion from normalized HiC contact matrix C_{ij} in distance matrix D_{ij} such that C_{ij} = 1/D_{ij}^{\alpha} . 
-The modification  of the \alpha parameter allows to tune the range of contacts to imputes (see video ...)
+Conversion from normalized HiC contact matrix $C_{ij}$ in distance matrix $D_{ij}$ such that $C_{ij} = 1/D_{ij}^{\alpha} $. 
+The modification  of the $\alpha$ parameter allows to tune the range of contacts to imputes (see  <a href="https://github.com/jbmorlot/ShRec-Exented/blob/master/Imputation%20evolution%20-black-%20with%20alpha%20parameter.avi
+">Video Evolution imputation (in black) with alpha </a>)
 
 ### Changing the dimensionality reduction algorithm
 The MDS allows to reconstruct large distances efficiently, whereas sometimes the short range distances reconstruction 
