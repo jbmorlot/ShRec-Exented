@@ -4,13 +4,13 @@ parameter [1].
 ## ShRec3D
 Algorithm developped by Lesnes et al [2] which reconstruct the 3D coordinates of a chromosom from a normalized HiC map (SCN [3]).
 The Algorithm is basically in two parts:
- * Conversion from normalized HiC contact matrix %24C_%7Bij%7D%24in distance matrix $D_{ij}$ such that $C_{ij} = 1/D_{ij} $
+ * Conversion from normalized HiC contact matrix ![img](http://latex.codecogs.com/svg.latex?%24C_%7Bij%7D%24) in distance matrix ![img](http://latex.codecogs.com/svg.latex?%24D_%7Bij%7D%24) such that ![img](http://latex.codecogs.com/svg.latex?%24C_%7Bij%7D+%3D+1%2FD_%7Bij%7D+%24)
  * Conversion of the distance mtrix in 3D coordinates with MDS
 
 ## Improvements
 ### Tuning the imputation parameter
-Conversion from normalized HiC contact matrix $C_{ij}$ in distance matrix $D_{ij}$ such that $C_{ij} = 1/D_{ij}^{\alpha} $. 
-The modification  of the $\alpha$ parameter allows to tune the range of contacts to imputes (see  <a href="https://github.com/jbmorlot/ShRec-Exented/blob/master/Imputation%20evolution%20-black-%20with%20alpha%20parameter.avi
+Conversion from normalized HiC contact matrix ![img](http://latex.codecogs.com/svg.latex?%24C_%7Bij%7D%24) in distance matrix ![img](http://latex.codecogs.com/svg.latex?%24D_%7Bij%7D%24) such that ![img](http://latex.codecogs.com/svg.latex?%24C_%7Bij%7D+%3D+1%2FD_%7Bij%7D%5E%7B%5Calpha%7D+%24) . 
+The modification  of the ![img](http://latex.codecogs.com/svg.latex?%24%5Calpha%24) parameter allows to tune the range of contacts to imputes (see  <a href="https://github.com/jbmorlot/ShRec-Exented/blob/master/Imputation%20evolution%20-black-%20with%20alpha%20parameter.avi
 ">Video Evolution imputation (in black) with alpha </a>)
 
 ### Changing the dimensionality reduction algorithm
