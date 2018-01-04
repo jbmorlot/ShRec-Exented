@@ -4,7 +4,7 @@ parameter [1].
 ## ShRec3D
 Algorithm developped by Lesnes et al [2] which reconstruct the 3D coordinates of a chromosom from a normalized HiC map (SCN [3]).
 The Algorithm is basically in two parts:
- * Conversion from normalized HiC contact matrix $C_{ij}$ in distance matrix $D_{ij}$ such that $C_{ij} = 1/D_{ij} $
+ * Conversion from normalized HiC contact matrix %24C_%7Bij%7D%24in distance matrix $D_{ij}$ such that $C_{ij} = 1/D_{ij} $
  * Conversion of the distance mtrix in 3D coordinates with MDS
 
 ## Improvements
